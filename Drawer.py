@@ -39,7 +39,7 @@ class Drawer:
                     y=y,
                     z=z,
                     color='black',
-                    opacity=0.50,
+                    # opacity=0.50,
                     i=[0],
                     j=[1],
                     k=[2],
