@@ -18,7 +18,8 @@ class Drawer:
         self.fig = go.Figure(go.Surface(
             x = x,
             y = y,
-            z = z
+            z = z,
+            opacity=0.50,
             ))
 
 
