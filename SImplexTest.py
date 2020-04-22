@@ -14,7 +14,7 @@ test_functions={
 if __name__ == "__main__":    
     for (f_name,f_data) in test_functions.items():
         f,(true_x,true_y)= f_data
-        simplexes = simplex(f,return_simplexes=True)
+        simplexes = simplex(f,return_simplexes=True,p=Point(-1,-3))
         triangles = [ ((point.x,point.y,f(point.x,point.y)) for point in triangle ) for triangle in simplexes ]
         drawer = Drawer(f,x_from=-3.5,x_to=3.5,y_from=-3.5,y_to=3.5)
         drawer.add_triangles(triangles)
